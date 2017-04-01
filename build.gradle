@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile(
+            // log
+            'org.slf4j:slf4j-api:1.7.22',
+            'ch.qos.logback:logback-core:1.1.9',
+            'ch.qos.logback:logback-classic:1.1.9',
+
+            // socketio
+            'com.corundumstudio.socketio:netty-socketio:1.7.12',
+
+            // database
+            'commons-dbutils:commons-dbutils:1.6',
+            'com.zaxxer:HikariCP:2.6.0',
+            'com.h2database:h2:1.4.193',
+    )
+}
+
+
